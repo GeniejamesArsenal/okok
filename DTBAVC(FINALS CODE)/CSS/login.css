@@ -1,0 +1,96 @@
+body {
+    font-family: 'JetBrains Mono';
+    background-color: #A0153E;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 300px;
+    background-color: #A0153E;
+    padding: 80px;
+    border-radius: 14px;
+}
+
+.logo {
+    width: 55%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Text input styling */
+.textb {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 92%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+.placeholder {
+    width: 100%;
+    position: fixe;
+    color: white;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+
+/* log in style button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00224D;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+/* create account button style */
+a { 
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    color: #fff; /* Text color */
+    background-color: #00224D; /* Background color */
+    border: none; /* No border */
+    border-radius: 14px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-sizing: border-box; /* Box-sizing property */
+    text-decoration: none; /* No text decoration for link */
+    display: block; /* Block display */
+    text-align: center; /* Center text alignment */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Eye icon for password visibility */
+.show-password {
+    position: absolute;
+    top: 34%; /* adjust nimo aha dapita ang mata */
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.fas.fa-user {
+        position: absolute;
+        top: 34%; /* user ni na icon ha kasabot ka! */
+        right: 10px; 
+        transform: translateY(-50%);
+    }

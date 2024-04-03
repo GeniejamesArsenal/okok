@@ -1,0 +1,230 @@
+body{
+    font-family: 'JetBrains Mono';
+    color: white;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px  ; /* fix ni nimo diri dapita para nindot lantawon, naa pa tay error diri*/
+    background-color: #00224D;
+    
+}
+.logo{
+    position: relative;
+    display: inline-block;
+}
+.search-container{
+    position: relative;
+    display: inline-block;
+}
+.search-bar{
+    margin: 10px;
+    padding: 5px;
+    background-color: #A0153E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 8.6px rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+    padding-right: 30px;
+}
+.fa-search{
+    position: absolute;
+    left: 22px;
+    top: 17px;
+    color: #00224D;
+}
+.dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+.dropbtn {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #A0153E; /* Set text color */
+    }
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #00224D;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        right: 0; 
+    }
+
+.dropdown-content a {
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        border-radius: 5px;
+    }
+
+.dropdown-content a:hover {
+        background-color: #A0153E;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+.dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+.select1 {
+        display: inline-block;
+    }
+
+.dropdown:hover .dropbtn {
+        border-radius: 5px;
+    }
+
+    /* darkmode button */
+.dropdown-content button{
+    padding: 10px 16px;
+    background-color: #00224D;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.dropdown-content button{
+    border-radius: 14px;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+.dropdown-content button:hover{
+    background-color: #A0153E;
+
+}
+
+
+
+.nav2{
+    background: #00224D;
+    padding: 60px;
+}
+.select1 a{
+    position: absolute;
+    bottom: 85%;
+    right: 39.2%;
+    margin-inline-end: -18vh;
+}
+.select1 button{
+    padding: 15px 50px;
+    border: none;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 200px;
+    background-color: #A0153E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.select1 button:hover{
+    background-color: #00224D;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.select2 a{
+    position: absolute;
+    bottom: 85%;
+    right: 28%;
+    margin-inline-end: -17vh;
+}
+.select2 button{
+    padding: 15px 50px;
+    border: none;
+    color: white;
+    border-radius: 14px;
+    cursor: pointer;
+    width: 200px;
+    background-color: #A0153E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.select2 button:hover{
+    background-color: #00224D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* create post ni diri dapita */
+
+.write-post-container {
+    background-color: #A0153E;
+    max-height: 80px;
+    max-width: 890px;
+    margin-top: -135px;
+    margin-left: 150px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-post {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 22px;
+    margin-top: -190px;
+}
+
+.user-profile p {
+    margin-top: -190px;
+    margin-left: -10px;
+    font-size: bold;
+}
+.public{
+    margin-left: -318px;
+    margin-top: -170px;
+    font-size: small;
+}
+
+.date-time {
+    margin-left: 10px;
+    margin-top: -203px;
+    font-size: small;
+}
+
+.post-button {
+    padding: 9px 12px;
+    background-color: #00224D;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: -195px;
+    margin-left: 570px;
+}
+
+.post-button:hover {
+    background-color: #A0153E;
+}
+.post-input-container{
+    position: relative;
+}
+
+.post-input-container textarea {
+    padding: 5px 10px;
+    width: 510%;
+    margin-top: 150px;
+    margin-right: -40px;
+    resize: none;
+    color: black;
+
+}
+.placeholder{
+top: -120px;
+right: 48px;
+position: inherit;
+background: rgb(255, 255, 255);
+color: #fff;
+border-radius: 5px;
+}

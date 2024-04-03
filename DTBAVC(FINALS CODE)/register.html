@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/logo/app icon home.png" type="logo"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Register</title>
+    <style>
+        body {
+            background-color: #A0153E;
+            font-family: 'JetBrains Mono';
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .rectangle {
+            width: 564px;
+            height: auto; /* Changed 'flex' to 'auto' */
+            background: #FF204E;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            color: black; /* Changed color to black */
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px; /* Adjusted margin for better alignment */
+        }
+
+        .logo img {
+            width: 150%; /* Ensures the image fills the container */
+            height: 200%; /* Ensures the image fills the container */
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 19px;
+            border: none;
+            width: 500px;
+            height: 36px;
+        }
+
+        form label {
+            text-align: left;
+            width: 250px; /* Adjust the width based on your design */
+            margin-right: 10px; /* Add some space between label and input */
+            display: flex;
+            align-items: center;
+        }
+
+        form input, form select {
+            width: calc(100% - 170px); /* Adjust the width based on your design */
+        }
+
+        input[type="submit"] {
+            background-color: #00224D;
+            color: white;
+            cursor: pointer;
+            height: 36px;
+            border: none;
+            border-radius: 19px;
+            width: 200px;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="rectangle">
+        <form action="index.html" method="post">
+            <div class="logo">
+                <a href="login.html">
+                    <img src="officiallogo.svg" alt="logo">
+                </a>
+            </div>
+            <label for="name"><i class="fas fa-user"> Name </i></label><br>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="lastname"><i class="fas fa-user">  Last Name </i></label><br>
+            <input type="text" id="lastname" name="lastname" required>
+            
+            <label for="email"><i class="fas fa-envelope"> Email Address </i></label><br>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password"><i class="fas fa-lock"> Password </i></label><br>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="age"><i class="fas fa-birthday-cake"> Age </i></label><br>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="birthday"><i class="fas fa-calendar-alt"> Birthday </i> </label><br>
+            <input type="date" id="birthday" name="birthday" required>
+            
+            <label for="role"><i class="fas fa-user-graduate"> Select Role </i></label><br>
+            <select id="role" name="role">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+            
+            <input type="submit" value="Create Account">
+        </form>
+    </div>
+    
+</body>
+</html>
